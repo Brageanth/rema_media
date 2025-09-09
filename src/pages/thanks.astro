@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout>
+  <div
+    class="bg-[url(/background.png)] bg-local bg-clip-border bg-origin-border bg-top bg-size-[120%] pb-12 min-h-screen flex flex-col justify-between"
+  >
+    <Header />
+    <div class="flex-1 flex w-full items-stretch justify-center flex-col">
+     <Card><div class="p-6 font-bold text-white text-xl"><p class="text-center">Gracias por tu mensaje</p></div></Card> 
+    </div>
+  </div>
+</Layout>
