@@ -239,7 +239,12 @@ import { Image } from "astro:assets";
           <p class="text-midnight lg:text-xl lg:mt-15 mt-5">
             Ingresa los siguientes datos y nos comunicaremos contigo
           </p>
-          <form action="" class="w-full gap-4 flex flex-col lg:mt-15 mt-5">
+          <form
+            action=""
+            class="w-full gap-4 flex flex-col lg:mt-15 mt-5"
+            action="https://formspree.io/f/mdklbnnk"
+            method="POST"
+          >
             <div class="lg:flex w-full gap-8">
               <Input label="Nombre" key="name" inputType="text" />
               <Input label="Mail" key="email" inputType="email" />
@@ -250,6 +255,7 @@ import { Image } from "astro:assets";
               inputType="text"
             />
             <Input label="Mensaje" key="message" inputType="textarea" />
+            <Button title="Enviar" />
           </form>
         </div>
       </div>
