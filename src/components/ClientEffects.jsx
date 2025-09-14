@@ -56,13 +56,20 @@ export default function ScrollAndLenis() {
       });
     });
 
-    console.log(document.getElementsByClassName("NAVIGATE_SERVICIOS"));
 
     const navigateToServicesItems =
       document.getElementsByClassName("NAVIGATE_SERVICIOS");
+    const navigateToContactoItems =
+      document.getElementsByClassName("NAVIGATE_CONTACTO");
     for (let btn of navigateToServicesItems) {
       btn.addEventListener("click", (e) => {
         const target = document.getElementById("SERVICIOS");
+        if (target) lenis.scrollTo(target);
+      });
+    }
+    for (let btn of navigateToContactoItems) {
+      btn.addEventListener("click", (e) => {
+        const target = document.getElementById("CONTACTO");
         if (target) lenis.scrollTo(target);
       });
     }
