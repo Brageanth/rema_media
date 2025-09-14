@@ -14,7 +14,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: "https://rema-media.vercel.app/",
+  site: "https://rema-media.com/",
   adapter: vercel(),
   integrations: [react(), sitemap()],
 });
